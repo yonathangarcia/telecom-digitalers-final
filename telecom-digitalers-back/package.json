@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "e": "^0.2.33",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.6.1",
+    "path": "^0.12.7"
+  },
+  "name": "telecom-digitalers-proyecto-e2",
+  "description": "segunda entrega telecom digitalers node.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Dev": "nodemon app.js"
+  },
+  "author": "Yonathan Exequiel Garcia",
+  "license": "ISC"
+}
