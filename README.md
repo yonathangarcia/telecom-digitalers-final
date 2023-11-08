@@ -9,7 +9,7 @@ las rutas de inicio de sesion son
 https://digitalers-back.onrender.com/login/login  
 https://digitalers-back.onrender.com/login/logout  
 
-para las dos rutas se valida el usuario.rol del token guardado en la cookie y el token mismo, en postman se carga automatico, asi que no deberia haber problema  
+para las otras dos rutas se valida el usuario.rol del token guardado en la cookie y el token mismo, en postman se carga automatico, asi que no deberia haber problema  
 las rutas de los usuarios de rol "user" es "/users" e incorpora /contact entre otras  
 
 las rutas de admin verifican tambien el rol y el token, teniendo las rutas:  
