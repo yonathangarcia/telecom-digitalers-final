@@ -1,5 +1,5 @@
 # telecom-digitalers-final 
-utiliza cookies para el logueo, la guarda con el nombre "tokenyonathangarcia", si bien no pude completar el front, el back funciona completo, desde la carga de entradas para el blog, contacto, gestion de usuarios, en el token de la cookie se guarda el rol del usuario y el token de validacion, los cuales luego son verificados para permitir el acceso a las rutas segun sea "user" o "admin" 
+utiliza cookies para el logueo, la guarda con el nombre "tokenyonathangarcia", si bien no pude completar el front, el back funciona completo, desde la carga de entradas para el blog, contacto, gestion de usuarios, en el token de la cookie se guarda el rol del usuario y el token de validacion, los cuales luego son verificados para permitir el acceso a las rutas segun sea "user" o "admin", uso el .env para guardar "Mongoose_conect_credential" y "Tu_secreto" el ultimo necesario para la creacion del token y su validacion posterior, solo seria necesario completar esos parametros en el .env para tenerlo funcional en el entorno local usando mongodb atlas.  
 
 el deploy del back en render  
 https://digitalers-back.onrender.com/  
