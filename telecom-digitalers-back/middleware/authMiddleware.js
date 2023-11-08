@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 
 const verificarToken = (req, res, next) => {
-  const token = req.header("x-auth-token");
-  //const token = req.cookies.tokenyonathangarcia;
+  //const token = req.header("x-auth-token");
+  const token = req.cookies.tokenyonathangarcia;
 
   if (!token) {
     return res.status(401).json({ mensaje: "Token no proporcionado, autorización denegada" });

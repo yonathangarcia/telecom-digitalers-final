@@ -1,6 +1,5 @@
 const BlogEntry = require("../models/blogEntryModel");
 
-// Obtener todas las entradas del blog
 const getEntries = async (req, res) => {
     try {
         const entries = await BlogEntry.find();
@@ -10,7 +9,6 @@ const getEntries = async (req, res) => {
     }
 };
 
-// Obtener una entrada del blog por ID
 const getEntryById = async (req, res) => {
     try {
         const entry = await BlogEntry.findById(req.params.id);
@@ -23,12 +21,12 @@ const getEntryById = async (req, res) => {
     }
 };
 
-// Crear una nueva entrada de blog
 const postEntry = async (req, res) => {
     const blogEntry = new BlogEntry({
         title: req.body.title,
         content: req.body.content,
-        authorId: req.body.authorId
+        authorName: req.body.authorName,
+        date: req.body.date,
     });
 
     try {
@@ -39,7 +37,6 @@ const postEntry = async (req, res) => {
     }
 };
 
-// Eliminar una entrada de blog
 const deleteEntry = async (req, res) => {
     try {
         const entry = await BlogEntry.findById(req.params.id);
@@ -54,7 +51,6 @@ const deleteEntry = async (req, res) => {
     }
 };
 
-// Actualizar una entrada de blog
 const updateEntry = async (req, res) => {
     try {
         const entry = await BlogEntry.findById(req.params.id);

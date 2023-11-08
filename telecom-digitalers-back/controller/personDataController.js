@@ -1,6 +1,5 @@
 const PersonData = require("../models/personDataModel");
 
-// Obtener todos los datos de las personas
 const getPersonData = async (req, res) => {
     try {
         const personData = await PersonData.find();
@@ -10,7 +9,6 @@ const getPersonData = async (req, res) => {
     }
 };
 
-// Crear nuevos datos de persona
 const postPersonData = async (req, res) => {
     const personData = new PersonData({
         name: req.body.name,

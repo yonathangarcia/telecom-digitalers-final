@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Community Manager</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/auth.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&display=swap"
+            rel="stylesheet" />
+    </head>
+
+    <nav class="nav">
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+        <div class="buttons-nav">
+            <a href="products.html" class="button-nav">productos</a>
+            <a href="blog.html" class="button-nav">blog</a>
+            <a href="about.html" class="button-nav">info</a>
+            <a href="contact.html" class="button-nav">contacto</a>
+            <a href="login.html" class="button-login"><button id="login-btn" class="button-login">login</button></a>
+
+
+            <button id="logout-btn" style="display: none;">Cerrar sesión</button>
+
+        </div>
+    </nav>
+
+    <body>
+        <section class="login-section">
+            <div class="login-form">
+                <form action="http://localhost:3000/login/login" method="post" class="form-index-1">
+                    <br>
+                    <input type="email" name="email" id="" required placeholder="Correo" class="form-index">
+                    <br>
+                    <input type="password" name="password" id="passwordinput" required placeholder="Contraseña"
+                        class="form-index" />
+                    <br />
+                    <input type="submit" value="Iniciar Sesion" class="button-login" />
+                </form>
+            </div>
+        </section>
+
+
+
+    </body>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>Yonathan Garcia - 2023</p>
+        </div>
+        <div class="footer-redes">
+            <a href="https://www.facebook.com/yonathan.garcia.754365"><img src="img/facebook.ico" alt=""
+                    class="redes" /></a>
+            <a href="https://www.instagram.com/yonathan.garcia.754365/"><img src="img/instagram.ico" alt=""
+                    class="redes" /></a>
+            <a href="https://www.linkedin.com/in/yonathangarcia"><img src="img/linkedin.ico" alt="" class="redes" /></a>
+        </div>
+    </footer>
+
+</html>

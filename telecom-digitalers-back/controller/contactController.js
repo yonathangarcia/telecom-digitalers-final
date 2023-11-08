@@ -1,12 +1,9 @@
 const Contact = require("../models/contactModel");
 
-// Obtener el formulario de contacto
 const getContact = (req, res) => {
-    // Aquí puede renderizar su formulario de contacto o enviar una respuesta JSON
     res.send("Formulario de contacto");
 };
 
-// Enviar el formulario de contacto
 const postContact = async (req, res) => {
     const contact = new Contact({
         name: req.body.name,

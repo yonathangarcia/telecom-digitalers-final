@@ -4,9 +4,6 @@ const usersController = require("../controller/usersController");
 const blogController = require("../controller/blogController");
 const storeController = require("../controller/storeController");
 
-adminRouter.post("/register", usersController.registrarUsuario);
-adminRouter.post("/login", usersController.iniciarSesion);
-adminRouter.get("/logout", usersController.cerrarSesion);
 adminRouter.delete("/deleteuser/:id", usersController.deleteUser);
 adminRouter.put("/updateuser/:id", usersController.updateUser);
 

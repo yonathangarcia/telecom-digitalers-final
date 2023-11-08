@@ -1,12 +1,22 @@
 * {
   margin: 0;
 }
+
+body {
+  background-color: rgb(116, 172, 167);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 h3 {
   font-weight: bolder;
 }
+
 .logo {
   width: 50px;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -14,6 +24,7 @@ h3 {
   background-color: rgb(116, 172, 167);
   align-items: center;
 }
+
 .buttons-nav {
   display: flex;
   justify-content: space-between;
@@ -21,15 +32,28 @@ h3 {
   margin-right: 2em;
   font-family: "Montserrat", sans-serif;
 }
+
 .button-nav {
   text-decoration: none;
   color: #000;
   font-size: 20px;
 }
+
+.button-login {
+  text-decoration: none;
+  border-style: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+  padding: 10px;
+  color: #000;
+  font-size: 20px;
+}
+
 .portada {
   width: 100%;
   height: 500px;
 }
+
 .titulo-portada {
   text-shadow: #ffffff 0px 0px 30px, #ffffff 0px 0px 20px, #ffffff 0px 0px 10px;
   position: absolute;
@@ -38,6 +62,7 @@ h3 {
   font-size: 60px;
   font-family: "Montserrat", sans-serif;
 }
+
 .titulo-intro {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
@@ -45,15 +70,18 @@ h3 {
   color: #000000;
   text-align: center;
 }
+
 .productos-section {
   background-color: rgb(116, 172, 167);
   font-family: "Montserrat", sans-serif;
 }
+
 .productos-section-products {
   background-color: rgb(116, 172, 167);
   font-family: "Montserrat", sans-serif;
   padding-bottom: 100px;
 }
+
 .titulo-opciones {
   padding-top: 40px;
   font-family: "Montserrat", sans-serif;
@@ -61,36 +89,42 @@ h3 {
   color: #000000;
   text-align: center;
 }
+
 .productos {
   display: flex;
   justify-content: space-evenly;
   margin: 2em;
   margin-bottom: -1em;
 }
+
 .planes {
   padding: 5em;
   background-color: rgba(0, 255, 255, 0.322);
   margin: 30px;
 }
+
 .contacto-img {
   width: 100%;
   height: 500px;
 }
+
 .novedades {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .suscribite {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: #000000;
   text-align: center;
 }
+
 .form-index-1 {
   display: grid;
-  text-align: initial;
 }
+
 .form-index {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -99,13 +133,19 @@ h3 {
   border: 2px #000000 solid;
   border-radius: 12px;
 }
+
 .btn-contacto {
+
   font-family: "Montserrat", sans-serif;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
   text-align: center;
   border: 2px #000000 solid;
   border-radius: 12px;
 }
+
 .footer {
   display: flex;
   background-color: rgb(116, 172, 167);
@@ -113,12 +153,16 @@ h3 {
   font-family: "Montserrat", sans-serif;
   padding: 10px;
   align-items: center;
+  flex-direction: column;
+  margin-top: auto;
 }
+
 .footer-redes {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
 }
+
 .redes {
   width: 25px;
 }
@@ -128,12 +172,15 @@ h3 {
   justify-content: space-evenly;
   font-family: "Montserrat", sans-serif;
   align-items: center;
+  flex-direction: column-reverse;
 }
+
 .dejanos-datos {
   align-items: center;
   text-align: center;
   width: 40%;
 }
+
 .dejanos-datos-p {
   text-align: center;
   font-size: 20px;
@@ -141,13 +188,16 @@ h3 {
   background-color: rgba(255, 0, 0, 0.486);
   border-radius: 15px;
 }
+
 .general {
   font-family: "Montserrat", sans-serif;
   padding: 5%;
 }
+
 .blog-section {
   margin: 5%;
 }
+
 .blog-titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -155,16 +205,19 @@ h3 {
   text-align: center;
   margin: 5%;
 }
+
 .blog {
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
+
 .tags {
   width: 20%;
   align-items: initial;
 }
+
 .entradas {
   width: 80%;
   display: table-row;
@@ -173,9 +226,35 @@ h3 {
   text-align: justify;
   width: 100%;
 }
+
 .info-fecha-compartir {
   border: #000000;
   border-style: solid;
   border-width: 3px;
   text-align: end;
+}
+
+.login-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+.login-form {
+  background-color: white;
+  padding: 3%;
+  width: 30%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border: 2px #000000 solid;
+  border-radius: 12px;
+}
+
+.contact {
+  background-color: lightgreen;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 1%;
 }

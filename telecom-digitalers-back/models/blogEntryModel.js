@@ -5,7 +5,7 @@ const blogEntrySchema = new Schema({
     content: { type: String, required: true },
     authorName: { type: String, required: true },
     date: { type: Date, required: true },
-    authorId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    authorId: { type: Schema.Types.ObjectId, ref: 'User', required: false },
 }, { timestamps: true });
 
 module.exports = model("BlogEntry", blogEntrySchema);

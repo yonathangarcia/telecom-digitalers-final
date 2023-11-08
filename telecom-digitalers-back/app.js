@@ -8,6 +8,10 @@ const { verificarToken, verificarRol } = require('./middleware/authMiddleware');
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.removeHeader("Permissions-Policy");
+  next();
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -17,6 +21,9 @@ mongoose.connect(process.env.Mongoose_conect_credential, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+const loginRouter = require("./routes/login");
+app.use("/login", loginRouter);
 
 const usersRouter = require("./routes/users");
 app.use("/users", verificarToken, verificarRol('user'), usersRouter);

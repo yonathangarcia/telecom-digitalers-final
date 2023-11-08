@@ -53,13 +53,13 @@ const iniciarSesion = async (req, res) => {
     }
 
     const token = jwt.sign(
-      { id: usuario._id, email: usuario.email },
-      "tu_secreto"
+      { id: usuario._id, email: usuario.email, rol: usuario.rol },
+      process.env.Tu_secreto
     );
-
-    res.cookie('token', token, { httpOnly: true, Secure: process.env.NODE_ENV === 'production', sameSite: 'Strict', maxAge: 14400000 });
-
-    return res.status(200).json({ mensaje: 'Inicio de sesión exitoso.' });
+    //Secure: process.env.NODE_ENV === 'production', sameSite: 'Strict'
+    res.cookie('tokenyonathangarcia', token, { httpOnly: true, Secure: true, SameSite: 'Strict', maxAge: 7200000 });
+    return res.status(200).json({ mensaje: "Sesión iniciada correctamente" });
+    //return res.redirect('http://127.0.0.1:5500/Telecom-digitalers-front/index.html');
   } catch (error) {
     return res.status(500).json({ mensaje: "Error al iniciar sesión", error });
   }

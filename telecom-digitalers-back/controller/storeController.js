@@ -1,6 +1,5 @@
 const Store = require("../models/storeEntryModel");
 
-// Obtener todos los elementos de la tienda
 const getStore = async (req, res) => {
     try {
         const storeItems = await Store.find();
@@ -10,7 +9,6 @@ const getStore = async (req, res) => {
     }
 };
 
-// Obtener un elemento de la tienda por ID
 const getStoreById = async (req, res) => {
     try {
         const storeItem = await Store.findById(req.params.id);
@@ -23,7 +21,6 @@ const getStoreById = async (req, res) => {
     }
 };
 
-// Crear un nuevo elemento de la tienda
 const postStore = async (req, res) => {
     const storeItem = new Store({
         name: req.body.name,
@@ -38,7 +35,7 @@ const postStore = async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 };
-// Eliminar un producto de la tienda
+
 const deleteStoreProduct = async (req, res) => {
     try {
         const product = await Store.findById(req.params.id);
@@ -53,7 +50,6 @@ const deleteStoreProduct = async (req, res) => {
     }
 };
 
-// Actualizar un producto de la tienda
 const updateStoreProduct = async (req, res) => {
     try {
         const product = await Store.findById(req.params.id);
